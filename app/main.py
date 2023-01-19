@@ -153,7 +153,7 @@ async def load_predict(Image: UploadFile = File(...), Mask: UploadFile = File(..
     os.remove(image_path)
     os.remove(mask_path)
 
-    return {"Predicted Label :":y_pred_class, "Predicted Disease :": disease}
+    return {"Predicted Label :":y_pred_class, "Predicted Disease :": disease, "Prob : ":y_pred}
 
 """
 @app.post("/upload-file/")
