@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 #RUN python ./setup.py install
 # 
-#COPY ./app /code/app
+COPY ./app /code/app
 #
 EXPOSE $PORT
 
