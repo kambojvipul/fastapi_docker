@@ -11,3 +11,4 @@ PyWavelets>=0.4.0
 pykwalify>=1.6.0
 six>=1.10.0
 pyradiomics
+python-multipart
