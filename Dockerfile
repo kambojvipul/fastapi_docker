@@ -10,9 +10,9 @@ COPY ./requirements.txt /code/requirements.txt
 # 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-CMD pip install --upgrade pip
+RUN pip install --upgrade pip
 
-CMD conda install -c radiomics pyradiomics
+RUN conda install -c radiomics pyradiomics
 
 # 
 COPY ./app /code/app
