@@ -1,4 +1,4 @@
-numpy>=1.9.2
+numpy
 pandas
 PyWavelets>=0.4.0
 pykwalify>=1.6.0
@@ -11,5 +11,4 @@ tensorflow-cpu==2.9.2
 gunicorn==20.0.4
 python-multipart==0.0.5
 SimpleITK>=0.9.1
-numpy>=1.9.2
-pyradiomics
+
