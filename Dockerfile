@@ -1,5 +1,5 @@
 # 
-FROM python:3.8.10
+FROM continuumio/miniconda3
 
 # 
 WORKDIR /code
@@ -9,9 +9,9 @@ COPY ./requirements.txt /code/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-RUN python ./setup.py install
+#RUN python ./setup.py install
 # 
-COPY ./app /code/app
+#COPY ./app /code/app
 #
 EXPOSE $PORT
 
