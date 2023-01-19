@@ -7,15 +7,9 @@ WORKDIR /code
 # 
 COPY ./requirements.txt /code/requirements.txt
 
-# 
-RUN git clone git://github.com/Radiomics/pyradiomics
-
-RUN cd pyradiomics
-
-RUN python -m pip install -r requirements.txt
+UN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 RUN python setup.py install
-
 # 
 COPY ./app /code/app
 #
