@@ -7,7 +7,8 @@ import uvicorn
 #import matplotlib.pyplot as plt
 #import seaborn as sns
 import numpy as np
-import pandas as pd 
+import pandas as pd
+!pip install pyradiomics
 import radiomics 
 import six
 from radiomics import featureextractor  # This module is used for interaction with pyradiomics
