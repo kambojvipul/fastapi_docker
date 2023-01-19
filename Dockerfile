@@ -15,6 +15,4 @@ COPY ./app /code/app
 #
 EXPOSE $PORT
 #
-CMD python setup.py install 
-
 CMD uvicorn app.main:app --host 0.0.0.0 --port ${PORT}
