@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  fastapidockerheroku:
+    image: fastapidockerheroku
+    build:
+      context: .
+      dockerfile: ./Dockerfile
