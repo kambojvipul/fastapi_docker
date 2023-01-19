@@ -12,3 +12,5 @@ gunicorn==20.0.4
 python-multipart==0.0.5
 SimpleITK>=0.9.1
 pyradiomics
+numpy>=1.9.2
+
